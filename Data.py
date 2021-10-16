@@ -4,64 +4,59 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}
+♦️ Opa {}
 
-Welcome to {}
+Bem vindo ao {}
 
-If you don't trust this bot, 
-1) stop reading this message
-2) delete this chat
+Você pode me usar para gerar as sessões : Pyrogram e Telethon string sessão. Use alguns botões abaixo para saber mais!
 
-Still reading?
-You can use me to generate pyrogram and telethon string session. Use below buttons to learn more !
-
-By @StarkBots
+By 『♚•꣣𝑻⃯̭꣣𝒉⃯̭꣣𝒆⃯̭꣣ ┼ ͓꣣𝑷⃯̭͓꣣𝒂⃯̭꣣𝒏⃯̭꣣𝒅⃯̭͓꣣𝒂⃯̭꣣•♚』 
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
+        [InlineKeyboardButton("➜ ♦️ Iniciar à Gerar à sua vossa Sessão String ♦️", callback_data="generate")],
+        [InlineKeyboardButton(text="🧐 Voltar ao início 🧐", callback_data="home")]
     ]
 
     generate_button = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
+        [InlineKeyboardButton("➜ ♦️ Iniciar à Gerar à sua vossa Sessão String ♦️", callback_data="generate")]
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
+        [InlineKeyboardButton("➜ ♦️ Iniciar à Gerar à sua vossa Sessão String ♦️", callback_data="generate")],
+        [InlineKeyboardButton("➜ Criador", url="https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx")],
         [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("Como me usar❔", callback_data="help"),
+            InlineKeyboardButton("♦️ Sobre o bot ♦️", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")],
+        [InlineKeyboardButton("♥ Canal ♥", url="https://t.me/RabiscoS_MeuS_77")],
     ]
 
     # Help Message
     HELP = """
-✨ **Available Commands** ✨
+♦️ **Comandos do bot** ♦️
 
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
-/generate - Start Generating Session
-/cancel - Cancel the process
-/restart - Cancel the process
+/about - Sobre o bot
+/help - Ajuda sobre o bot
+/start - Iniciar o bot
+/generate - Iniciar a gerar a sessão 
+/cancel - Cancelar o processo 
+/restart - Reiniciar o processo
 """
 
     # About Message
     ABOUT = """
-**About This Bot** 
+**Sobre o bot** 
 
-A telegram bot to generate pyrogram and telethon string session by @StarkBots
+♦️ Bot para gerar sessão Pyrogram e Telethon string ♦️
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/StringSessionBot)
+♦️ Criador : [Clique aqui](https://t.me/xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx)
 
-Framework : [Pyrogram](docs.pyrogram.org)
+♦️ Estrutura : [Pyrogram](docs.pyrogram.org)
 
-Language : [Python](www.python.org)
+♦️ Linguagem : [Python](www.python.org)
 
-Developer : @StarkProgrammer
+♦️ Desenvolvedor : @xPV_D4_M34_S4Y0R1_D3M0N_CR4ZZYx
     """
