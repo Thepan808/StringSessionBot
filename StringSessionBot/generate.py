@@ -41,7 +41,7 @@ async def main(_, msg):
 async def generate_session(bot, msg, telethon=False):
     await msg.reply("Iniciando {} Gerando à Sessão...".format("Telethon" if telethon else "Pyrogram"))
     user_id = msg.chat.id
-    api_id_msg = await bot.ask(user_id, 'Please send your `API_ID`', filters=filters.text)
+    api_id_msg = await bot.ask(user_id, 'Por favor, envie sua `API_ID`', filters=filters.text)
     if await cancelled(api_id_msg):
         return
     try:
@@ -53,7 +53,7 @@ async def generate_session(bot, msg, telethon=False):
     if await cancelled(api_id_msg):
         return
     api_hash = api_hash_msg.text
-    phone_number_msg = await bot.ask(user_id, 'Agora envie seu número`PHONE_NUMBER` com o DDD. \nExamplo : `+559876543210`', filters=filters.text)
+    phone_number_msg = await bot.ask(user_id, 'Agora envie seu número `PHONE_NUMBER` com o DDD. \nExamplo : `+559876543210`', filters=filters.text)
     if await cancelled(api_id_msg):
         return
     phone_number = phone_number_msg.text
