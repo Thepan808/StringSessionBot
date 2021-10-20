@@ -24,7 +24,7 @@ from telethon.errors import (
 ERROR_MESSAGE = "Ops! Ocorreu uma exceção! \n\n**Error** : {} " \
             "\n\nPor favor, tente novamente " \
             "informações importantes e você se deseja relatá-las, chame o criador " \
-            "esta mensagem de erro não está sendo registrada!"
+            "esta mensagem de erro não está sendo carregada, isso significa que você logou sua conta ou tentou inserir várias vezes!"
 
 
 @Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
